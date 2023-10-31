@@ -1,7 +1,5 @@
 <p align="center">
-  <a href="https://github.com/ShaanCoding/ReadME-Generator">
-    <img src="Aadhaar.png" alt="Logo" height="80">
-  </a>
+    <img src="Aadhaar.png" alt="Logo" height="180">
 
   <h3 align="center">Aadhaar OCR using Tesseract</h3>
 
@@ -26,6 +24,8 @@ This project is a Python-based tool designed to extract and digitize text inform
 
 Developers and data analysts often need to test and develop Redash features, plugins, and customizations in a local environment before deploying to a production server. While Linux is the recommended platform for hosting Redash, this project aims to make it more accessible to Windows users for local testing and development.
 
+****Disclaimer: The aadhaar samples used, were found on google using my internet search**
+
 ### Features
 
 - Aadhar Card Text Extraction: The project includes OCR capabilities that can accurately extract text from Aadhar Cards, including important information such as the Aadhar number, holder's name, date of birth, and address. This OCR functionality is powered by Tesseract, an open-source OCR engine known for its accuracy and versatility in text recognition.
@@ -33,6 +33,10 @@ Developers and data analysts often need to test and develop Redash features, plu
 - Customization: Users have the flexibility to customize the OCR process to accommodate variations in Aadhar Card formats and designs.
 
 - Open Source: This project is open source and can be freely used, modified, and extended by the community.
+<br />
+<p align="center">
+<img src="Tesseract.png" height="180" >
+</p>
 
 ## Getting Started
 
