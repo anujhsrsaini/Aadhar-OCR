@@ -54,8 +54,6 @@ Developers and data analysts often need to test and develop Redash features, plu
 git clone https://https://github.com/anujhsrsaini/Aadhar-OCR.git
 ```
 
-*You can change the environment variables if you want but there isn't much need for it.*
-
 2. It is recommended that you setup a completely new python environment from python 3.7.9 for this project, as the library versions in the requirements.txt may conflict with your prior installations, and install the required libraries to this environment using the below commands.
 
 ```sh
