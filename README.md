@@ -59,7 +59,7 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-3. Make the changes to main.py file, to include your own Tesseract path and paths to front and back of Aadhaar image you want to process. You might need to make slight change to backside image part of the code as mentioned in the commented part of the code.
+3. Make the changes to main.py file, to include your own Tesseract path and paths to front and back of Aadhaar image you want to process. You might need to make slight change to backside image part of the code based on the format of aadhaar you are using as mentioned in the commented part of the code.
 
 4. Now, you can run the code and it will print out the processed information.
 
