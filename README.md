@@ -6,7 +6,7 @@
   <h3 align="center">Aadhaar OCR using Tesseract</h3>
 
   <p align="center">
-    
+
   </p>
 </p>
 
@@ -28,47 +28,40 @@ Developers and data analysts often need to test and develop Redash features, plu
 
 ### Features
 
-* Aadhar Card Text Extraction: The project includes OCR capabilities that can accurately extract text from Aadhar Cards, including important information such as the Aadhar number, holder's name, date of birth, and address. This OCR functionality is powered by Tesseract, an open-source OCR engine known for its accuracy and versatility in text recognition.
+- Aadhar Card Text Extraction: The project includes OCR capabilities that can accurately extract text from Aadhar Cards, including important information such as the Aadhar number, holder's name, date of birth, and address. This OCR functionality is powered by Tesseract, an open-source OCR engine known for its accuracy and versatility in text recognition.
 
-* Customization: Users have the flexibility to customize the OCR process to accommodate variations in Aadhar Card formats and designs.
+- Customization: Users have the flexibility to customize the OCR process to accommodate variations in Aadhar Card formats and designs.
 
-* Open Source: This project is open source and can be freely used, modified, and extended by the community.
+- Open Source: This project is open source and can be freely used, modified, and extended by the community.
 
 ## Getting Started
 
 ### Prerequisites
 
-1. Ensure you have Windows 10 or later with [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) installed and configured.
-2. [Python 3.7.9](https://www.python.org/downloads/release/python-379/) Make sure you have Python 3.7.9 installed on your system. You can download and install Python from the official Python website.
-3. [Git](https://git-scm.com/download/win)
-4. [Tesseract OCR](https://github.com/tesseract-ocr/tessdoc/blob/main/Downloads.md): Tesseract is used for text extraction. Install Tesseract for your operating system by following the instructions on the Tesseract GitHub repository.
+1. [Python 3.7.9](https://www.python.org/downloads/release/python-379/) Make sure you have Python 3.7.9 installed on your system. You can download and install Python from the official Python website.
+2. [Git](https://git-scm.com/download/win)
+3. [Tesseract OCR](https://github.com/tesseract-ocr/tessdoc/blob/main/Downloads.md): Tesseract is used for text extraction. Install Tesseract for your operating system by following the instructions on the Tesseract GitHub repository.
 
 ### Installation
 
 1. Clone the repo
 
 ```sh
-git clone https://github.com/anujhsrsaini/redash.git
+git clone https://https://github.com/anujhsrsaini/Aadhar-OCR.git
 ```
 
 *You can change the environment variables if you want but there isn't much need for it.*
 
-2. Build and Run the docker container using the below command to run Redash it in detached mode.
+2. It is recommended that you setup a completely new python environment from python 3.7.9 for this project, as the library versions in the requirements.txt may conflict with your prior installations, and install the required libraries to this environment using the below commands.
 
 ```sh
-docker-compose up -d
+python -m venv venv
+pip install -r requirements.txt
 ```
 
-3. Run the below command to create a DB to store necessary information of Redash in PostgreSQL within the container.
+3. Make the changes to main.py file, to include your own Tesseract path and paths to front and back of Aadhaar image you want to process. You might need to make slight change to backside image part of the code as mentioned in the commented part of the code.
 
-```sh
-docker-compose run — rm server create_db
-```
-
-4. Use the browser to navigate to localhost:5000 to setup redash initially.
-
-5. Now, you can explore different functionalities of redash by setuping up different connections and building reports/dashboards.
-
+4. Now, you can run the code and it will print out the processed information.
 
 ## Authors
 
